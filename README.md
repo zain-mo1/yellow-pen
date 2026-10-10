@@ -36,12 +36,13 @@ Add `?lang=en` to any page address for the English version, and `?popup=1` to pr
 
 ```
 index.html, about.html, programs.html, gallery.html, contact.html
+site.webmanifest, robots.txt, sitemap.xml
 assets/
   css/styles.css     Styles. Brand colors and fonts are defined at the top.
   js/i18n.js         English translations for all pages.
   js/main.js         Language switch, animations, lightbox, gallery filter, visit form.
   js/popup.js        "Book a visit" popup and floating button.
-  img/               Optimized photos, logo and illustrations.
+  img/               Optimized photos, logo, icons and the link-preview image.
   video/             Short loops and full clips.
 ```
 
@@ -52,6 +53,10 @@ assets/
 - To add a new string in both languages, write the Arabic in the HTML with `data-i18n="some.key"`, then add `"some.key": "English text"` to `i18n.js`.
 - The header and footer are repeated in each page. A change to a navigation link or a footer detail has to be made in all five files.
 - Popup timing (delay, snooze period) is set by the constants at the top of `assets/js/popup.js`.
+
+## Link previews and domain
+
+Each page carries Open Graph and Twitter tags so that shared links show a title, a description and the preview image `assets/img/share.jpg` (1200x630). These tags, the canonical links, `robots.txt` and `sitemap.xml` use the absolute address `https://yellow-pen.vercel.app`. If the site moves to another domain, replace that address in all of them.
 
 ## Contact details used on the site
 
