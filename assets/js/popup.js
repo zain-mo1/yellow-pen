@@ -115,7 +115,7 @@
         '</fieldset>' +
         '<div class="popup__step" data-step="2" hidden>' +
           '<label for="popupName"><small data-t-step="2"></small><span data-t="q2"></span></label>' +
-          '<input id="popupName" name="parent" type="text" autocomplete="name" required>' +
+          '<input id="popupName" name="parent" type="text" autocomplete="name" enterkeyhint="send" required>' +
           '<p class="popup__err" role="alert" hidden data-t="err"></p>' +
           '<button class="btn btn--primary btn--lg btn--block" type="submit">' + WA_ICON + '<span data-t="send"></span></button>' +
           '<button class="popup__back" type="button" data-back><span data-t="back"></span></button>' +
@@ -223,6 +223,11 @@
     if (e.target === dlg || e.target.closest('[data-close]')) close();
   });
 
+  // The "Book a visit" button in the phone action bar opens the popup on every page
+  document.querySelectorAll('.action-bar__btn--wa').forEach(function (a) {
+    a.addEventListener('click', function (e) { e.preventDefault(); open(true); });
+  });
+
   // "Book a visit" buttons open the popup instead of jumping away
   if (page !== 'contact') {
     document.querySelectorAll('.header__cta, .nav__cta-mobile, .ages .btn--sun').forEach(function (a) {
@@ -234,7 +239,10 @@
   function updateFab() {
     var hero = document.querySelector('.hero, .page-hero');
     var past = window.scrollY > (hero ? hero.offsetHeight * 0.6 : 400);
-    fab.classList.toggle('is-visible', past && !dlg.open);
+    // step aside at the footer so it never covers the links there
+    var footer = document.querySelector('.footer');
+    var atFooter = footer && footer.getBoundingClientRect().top < window.innerHeight - 20;
+    fab.classList.toggle('is-visible', past && !atFooter && !dlg.open);
   }
   window.addEventListener('scroll', updateFab, { passive: true });
   updateFab();
