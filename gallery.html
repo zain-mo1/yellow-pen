@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-page="gallery">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>المعرض | مركز القلم الأصفر لضيافة الأطفال</title>
+  <meta name="description" content="صور ومقاطع فيديو حقيقية من داخل مركز القلم الأصفر لضيافة الأطفال في جدة – الحمدانية.">
+  <meta name="theme-color" content="#FFC93C">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="المعرض | مركز القلم الأصفر لضيافة الأطفال">
+  <meta property="og:description" content="صور ومقاطع فيديو حقيقية من داخل مركز القلم الأصفر لضيافة الأطفال في جدة – الحمدانية.">
+  <meta property="og:image" content="assets/img/og.jpg">
+
+  <!-- Set language before first paint to avoid a flash of the wrong direction -->
+  <script>
+    (function () {
+      var lang = 'ar';
+      try {
+        var q = new URLSearchParams(location.search).get('lang');
+        lang = q || localStorage.getItem('yp-lang') || 'ar';
+      } catch (e) {}
+      if (lang === 'en') {
+        document.documentElement.lang = 'en';
+        document.documentElement.dir = 'ltr';
+      }
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Baloo+Bhaijaan+2:wght@500;600;700;800&family=Caveat:wght@600;700&family=Nunito:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">تخطَّ إلى المحتوى</a>
+
+  <!-- Scroll progress: a pencil that writes as you scroll -->
+  <div class="progress" aria-hidden="true"><div class="progress__bar"><span class="progress__tip"></span></div></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Yellow Pen Center">
+        <img class="brand__mark" src="assets/img/emblem.webp" width="60" height="57" alt="">
+        <span class="brand__name">
+          <span class="brand__ar">مركز القلم الأصفر</span>
+          <span class="brand__en">Yellow Pen Center</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a href="index.html" data-i18n="nav.home">الرئيسية</a></li>
+          <li><a href="about.html" data-i18n="nav.about">من نحن</a></li>
+          <li><a href="programs.html" data-i18n="nav.programs">برامجنا</a></li>
+          <li><a href="gallery.html" aria-current="page" data-i18n="nav.gallery">المعرض</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">تواصل معنا</a></li>
+        </ul>
+        <a class="btn btn--primary nav__cta-mobile" href="contact.html#visit" data-i18n="cta.book">احجز زيارة</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="lang-switch" type="button" id="langSwitch" aria-label="Switch to English">
+          <span class="lang-switch__opt" data-l="ar">ع</span>
+          <span class="lang-switch__opt" data-l="en">EN</span>
+        </button>
+        <a class="btn btn--primary btn--sm header__cta" href="contact.html#visit" data-i18n="cta.book">احجز زيارة</a>
+        <button class="menu-toggle" type="button" id="menuToggle" aria-expanded="false" aria-controls="nav" data-i18n-attr="aria-label:menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="hero__paper" aria-hidden="true"></div>
+      <div class="container page-hero__grid">
+        <div class="page-hero__copy">
+          <p class="crumbs reveal"><a href="index.html" data-i18n="nav.home">الرئيسية</a><span aria-hidden="true">/</span><span data-i18n="nav.gallery">المعرض</span></p>
+          <h1 class="page-hero__title reveal" data-delay="1"><span data-i18n="ga.h1a">لحظات</span> <mark class="marker" data-i18n="ga.h1b">من يومنا</mark></h1>
+          <p class="lead reveal" data-delay="2" data-i18n="ga.lead">صور ومقاطع حقيقية من داخل مركز القلم الأصفر في جدة – الحمدانية.</p>
+        </div>
+        <div class="page-hero__art reveal reveal--pop" data-delay="2">
+          <span class="spark spark--1" aria-hidden="true"></span>
+          <span class="spark spark--3" aria-hidden="true"></span>
+          <figure class="polaroid">
+            <img src="assets/img/first-day-420.webp" width="420" height="747" alt="طفل يحمل إطار يومي الأول في الروضة" data-i18n-attr="alt:img.firstDay">
+            <figcaption class="hand" data-i18n="mo.c4">يومي الأول ✏️</figcaption>
+          </figure>
+          <figure class="polaroid">
+            <img src="assets/img/clown-gifts-400.webp" width="400" height="711" alt="المهرّج يوزّع الهدايا على الأطفال" data-i18n-attr="alt:ga.a1">
+            <figcaption class="hand" data-i18n="ga.t1">هدايا يوم العودة</figcaption>
+          </figure>
+        </div>
+      </div>
+      <svg class="book-edge" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path class="book-edge__page" d="M0 40 C 360 0, 620 10, 720 70 C 820 10, 1080 0, 1440 40 V120 H0Z"/>
+        <path class="book-edge__line" d="M0 58 C 360 18, 620 28, 720 88 C 820 28, 1080 18, 1440 58"/>
+        <path class="book-edge__spine" d="M0 104 C 400 96, 640 100, 720 116 C 800 100, 1040 96, 1440 104 V120 H0Z"/>
+      </svg>
+    </section>
+
+    <section class="section clips">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker reveal" data-i18n="ga.k1">فيديو</p>
+          <h2 class="h2 reveal" data-delay="1"><span data-i18n="ga.s1a">شاهدوا المركز</span> <mark class="marker" data-i18n="ga.s1b">بالصوت والصورة</mark></h2>
+        </header>
+        <div class="video-row">
+          <button class="media reveal" type="button" data-video="assets/video/parachute.mp4" data-poster="assets/img/parachute.webp" aria-label="وقت اللعب الجماعي" data-i18n-attr="aria-label:tour.v2">
+            <video class="js-loop" muted loop playsinline preload="none" poster="assets/img/parachute.webp" width="720" height="406"><source src="assets/video/loop-parachute.mp4" type="video/mp4"></video>
+            <span class="media__label"><span data-i18n="tour.v2">وقت اللعب الجماعي</span></span>
+            <span class="media__play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7Z"/></svg></span>
+          </button>
+          <button class="media reveal" type="button" data-video="assets/video/tour.mp4" data-poster="assets/img/outdoor.webp" aria-label="الساحة الخارجية" data-i18n-attr="aria-label:tour.v1">
+            <video class="js-loop" muted loop playsinline preload="none" poster="assets/img/outdoor.webp" width="480" height="684"><source src="assets/video/loop-outdoor.mp4" type="video/mp4"></video>
+            <span class="media__label"><span data-i18n="tour.v1">الساحة الخارجية</span></span>
+            <span class="media__play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7Z"/></svg></span>
+          </button>
+          <button class="media reveal" type="button" data-video="assets/video/back-to-school.mp4" data-poster="assets/img/hall-dance.webp" aria-label="الصالة الداخلية" data-i18n-attr="aria-label:tour.v3">
+            <video class="js-loop" muted loop playsinline preload="none" poster="assets/img/hall-dance.webp" width="480" height="854"><source src="assets/video/loop-hall.mp4" type="video/mp4"></video>
+            <span class="media__label"><span data-i18n="tour.v3">الصالة الداخلية</span></span>
+            <span class="media__play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7Z"/></svg></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shots">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker reveal" data-i18n="ga.k2">صور</p>
+          <h2 class="h2 reveal" data-delay="1"><span data-i18n="ga.s2a">من دفتر ذكريات</span> <mark class="marker" data-i18n="ga.s2b">العام الدراسي ٢٠٢٦</mark></h2>
+        </header>
+        <div class="filters reveal" role="group" aria-label="تصفية الصور" data-i18n-attr="aria-label:ga.f.aria">
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true" data-i18n="ga.f.all">الكل</button>
+          <button class="filter" type="button" data-filter="events" aria-pressed="false" data-i18n="ga.f.events">الفعاليات</button>
+          <button class="filter" type="button" data-filter="place" aria-pressed="false" data-i18n="ga.f.place">المكان</button>
+        </div>
+        <div class="masonry">
+          <button class="tile" type="button" data-cat="events" data-image="assets/img/group.webp">
+            <img src="assets/img/group-760.webp" width="760" height="570" loading="lazy" alt="صورة جماعية لأطفال المركز في يوم العودة" data-i18n-attr="alt:img.group2">
+            <span class="media__label"><span data-i18n="mo.c1">أول يوم في العام الجديد</span></span>
+          </button>
+          <button class="tile" type="button" data-cat="place" data-image="assets/img/outdoor.webp">
+            <img src="assets/img/outdoor-400.webp" width="400" height="579" loading="lazy" alt="الساحة الخارجية المغطاة بالعشب والجدران الملوّنة" data-i18n-attr="alt:ga.a2">
+            <span class="media__label"><span data-i18n="tour.v1">الساحة الخارجية</span></span>
+          </button>
+          <button class="tile" type="button" data-cat="events" data-image="assets/img/first-day.webp">
+            <img src="assets/img/first-day-420.webp" width="420" height="747" loading="lazy" alt="طفل يحمل إطار يومي الأول في الروضة" data-i18n-attr="alt:img.firstDay">
+            <span class="media__label"><span data-i18n="mo.c4">يومي الأول ✏️</span></span>
+          </button>
+          <button class="tile" type="button" data-cat="events" data-image="assets/img/parachute-2.webp">
+            <img src="assets/img/parachute-2-600.webp" width="600" height="338" loading="lazy" alt="الأطفال يلعبون بالمظلة الملوّنة" data-i18n-attr="alt:img.parachute">
+            <span class="media__label"><span data-i18n="mo.c3">مغامرة المظلة الملوّنة</span></span>
+          </button>
+          <button class="tile" type="button" data-cat="place" data-image="assets/img/arch-2026.webp">
+            <img src="assets/img/arch-2026-400.webp" width="400" height="711" loading="lazy" alt="قوس التصوير المزيّن بالبالونات الصفراء وعليه اسم المركز" data-i18n-attr="alt:ga.a3">
+            <span class="media__label"><span data-i18n="ga.t3">ركن التصوير</span></span>
+          </button>
+          <button class="tile" type="button" data-cat="events" data-image="assets/img/hall-dance.webp">
+            <img src="assets/img/hall-dance-400.webp" width="400" height="711" loading="lazy" alt="أطفال يلعبون في الصالة الداخلية" data-i18n-attr="alt:img.hallDance">
+            <span class="media__label"><span data-i18n="mo.c2">لعب وضحك في الصالة</span></span>
+          </button>
+          <button class="tile" type="button" data-cat="place" data-image="assets/img/entrance.webp">
+            <img src="assets/img/entrance-400.webp" width="400" height="579" loading="lazy" alt="مدخل مركز القلم الأصفر مزيّنًا بلافتة ترحيب" data-i18n-attr="alt:img.entrance">
+            <span class="media__label"><span data-i18n="tour.s1">أهلًا بكم عند الباب</span></span>
+          </button>
+          <button class="tile" type="button" data-cat="events" data-image="assets/img/clown-gifts.webp">
+            <img src="assets/img/clown-gifts-400.webp" width="400" height="711" loading="lazy" alt="المهرّج يوزّع الهدايا على الأطفال" data-i18n-attr="alt:ga.a1">
+            <span class="media__label"><span data-i18n="ga.t1">هدايا يوم العودة</span></span>
+          </button>
+          <button class="tile" type="button" data-cat="place" data-image="assets/img/hospitality.webp">
+            <img src="assets/img/hospitality-400.webp" width="400" height="711" loading="lazy" alt="طاولة الضيافة وعليها لوحة ارتشفي قهوتك باطمئنان" data-i18n-attr="alt:ga.a5">
+            <span class="media__label"><span data-i18n="ga.t5">ركن الضيافة</span></span>
+          </button>
+          <button class="tile" type="button" data-cat="events" data-image="assets/img/parachute.webp">
+            <img src="assets/img/parachute-600.webp" width="600" height="338" loading="lazy" alt="أطفال يطلّون من فتحات المظلة" data-i18n-attr="alt:img.parachute2">
+            <span class="media__label"><span data-i18n="mo.c6">مين يطلّ أولًا؟</span></span>
+          </button>
+          <button class="tile" type="button" data-cat="place" data-image="assets/img/welcome.webp">
+            <img src="assets/img/welcome-400.webp" width="400" height="579" loading="lazy" alt="لوحة «أهلًا بعودتكم» على العشب في الساحة" data-i18n-attr="alt:img.welcome">
+            <span class="media__label"><span data-i18n="tour.s2">أهلًا بعودتكم</span></span>
+          </button>
+          <button class="tile" type="button" data-cat="events" data-image="assets/img/hall.webp">
+            <img src="assets/img/hall-400.webp" width="400" height="711" loading="lazy" alt="أطفال يجمعون الألعاب الملوّنة في الصالة" data-i18n-attr="alt:img.hall">
+            <span class="media__label"><span data-i18n="mo.c5">مسابقة جمع الألوان</span></span>
+          </button>
+          <button class="tile" type="button" data-cat="place" data-image="assets/img/welcome-corner.webp">
+            <img src="assets/img/welcome-corner-400.webp" width="400" height="711" loading="lazy" alt="ركن الترحيب مزيّن بالبالونات ولافتات العودة" data-i18n-attr="alt:ga.a4">
+            <span class="media__label"><span data-i18n="ga.t4">ركن الترحيب</span></span>
+          </button>
+          <button class="tile" type="button" data-cat="place" data-image="assets/img/coffee.webp">
+            <img src="assets/img/coffee-400.webp" width="400" height="486" loading="lazy" alt="لوحة ترحيب في ركن الضيافة: ارتشفي قهوتك باطمئنان، صغيرك في أيدٍ أمينة" data-i18n-attr="alt:img.coffee">
+            <span class="media__label"><span data-i18n="ga.t6">صغيرك في أيدٍ أمينة</span></span>
+          </button>
+        </div>
+        <div class="follow reveal">
+          <a class="btn" href="https://www.instagram.com/yellowpen2023/" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg><span data-i18n="ga.ig">المزيد على إنستغرام</span></a>
+          <a class="btn" href="https://www.tiktok.com/@yellowpen2023" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.5 3 2.5 5 5.5 5"/></svg><span data-i18n="ga.tt">المزيد على تيك توك</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container">
+        <h2 class="h2 reveal"><span data-i18n="band.t1">زورونا وشاهدوا المكان</span> <mark class="marker" data-i18n="band.t2">بأنفسكم</mark></h2>
+        <p class="reveal" data-delay="1" data-i18n="band.p">أفضل طريقة لاختيار المكان المناسب لطفلك هي أن تراه بنفسك. راسلونا وسنرتب معكم موعد الزيارة.</p>
+        <div class="cta-band__btns reveal" data-delay="2">
+          <a class="btn btn--ink btn--lg js-wa" href="https://wa.me/966505393575" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 3.3 17.1L2 22l5-1.3A11 11 0 0 0 20.5 3.5Zm-8.5 17a9 9 0 0 1-4.6-1.3l-.3-.2-3 .8.8-2.9-.2-.3A9 9 0 1 1 12 20.5Zm5-6.7c-.3-.1-1.6-.8-1.9-.9s-.4-.1-.6.1-.7.9-.9 1.1-.3.2-.6.1a7.4 7.4 0 0 1-3.7-3.2c-.3-.5.3-.5.8-1.6a.5.5 0 0 0 0-.5l-.9-2.1c-.2-.6-.5-.5-.6-.5h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3Z"/></svg><span data-i18n="cta.bookWa">احجز زيارة عبر واتساب</span></a>
+          <a class="btn btn--lg" href="contact.html"><span data-i18n="nav.contact">تواصل معنا</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/img/logo-full-480.webp" width="160" height="206" loading="lazy" alt="شعار مركز القلم الأصفر — Yellow Pen Center" data-i18n-attr="alt:img.logo">
+        <p data-i18n="ft.tag">مركز القلم الأصفر لضيافة الأطفال — جدة، الحمدانية.</p>
+      </div>
+      <nav class="footer__links" aria-label="Footer">
+        <h4 data-i18n="ft.explore">تصفّح</h4>
+        <a href="index.html" data-i18n="nav.home">الرئيسية</a>
+        <a href="about.html" data-i18n="nav.about">من نحن</a>
+        <a href="programs.html" data-i18n="nav.programs">برامجنا</a>
+        <a href="gallery.html" data-i18n="nav.gallery">المعرض</a>
+        <a href="contact.html" data-i18n="nav.contact">تواصل معنا</a>
+      </nav>
+      <div class="footer__contact">
+        <h4 data-i18n="ft.follow">تابعونا</h4>
+        <div class="socials">
+          <a href="https://www.instagram.com/yellowpen2023/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" class="fill"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@yellowpen2023" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.5 3 2.5 5 5.5 5"/></svg>
+          </a>
+          <a class="js-wa" href="https://wa.me/966505393575" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4.2A8.5 8.5 0 1 1 8.4 19L4 20Z"/></svg>
+          </a>
+        </div>
+        <a class="footer__phone num" dir="ltr" href="tel:+966505393575">050 539 3575</a>
+        <span class="footer__handle" dir="ltr">@yellowpen2023</span>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> <span data-i18n="ft.rights">مركز القلم الأصفر. جميع الحقوق محفوظة.</span></p>
+      <a href="#top" class="footer__top" data-i18n="ft.top">العودة للأعلى ↑</a>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky action bar -->
+  <div class="action-bar" aria-label="Quick contact">
+    <a href="tel:+966505393575" class="action-bar__btn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></svg>
+      <span data-i18n="bar.call">اتصال</span>
+    </a>
+    <a href="https://wa.me/966505393575" target="_blank" rel="noopener" class="action-bar__btn action-bar__btn--wa js-wa">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4.2A8.5 8.5 0 1 1 8.4 19L4 20Z"/></svg>
+      <span data-i18n="bar.wa">احجز زيارة</span>
+    </a>
+  </div>
+
+  <!-- Video lightbox -->
+  <dialog class="lightbox" id="lightbox" data-i18n-attr="aria-label:lb.aria" aria-label="مشغّل الفيديو">
+    <button class="lightbox__close" type="button" data-i18n-attr="aria-label:lb.close" aria-label="إغلاق">×</button>
+    <video class="lightbox__video" controls playsinline preload="none"></video>
+    <img class="lightbox__img" alt="" hidden>
+  </dialog>
+
+  <script src="assets/js/i18n.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/popup.js" defer></script>
+</body>
+</html>

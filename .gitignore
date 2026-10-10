@@ -1,0 +1,12 @@
+# Raw source media (optimized copies are in assets/)
+/WhatsApp*
+/logo.jpeg
+
+# Promo video project (separate from the website)
+/promo/
+
+# Local tooling and OS files
+/.claude/
+node_modules/
+.DS_Store
+Thumbs.db

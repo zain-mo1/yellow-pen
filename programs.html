@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-page="programs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>برامجنا | مركز القلم الأصفر لضيافة الأطفال</title>
+  <meta name="description" content="ما يقدّمه مركز القلم الأصفر: حفظ القرآن والسيرة النبوية، ثنائية اللغة، أنشطة صفية ولا صفية، صالة لعب داخلية وخارجية، وفصول مجهزة لكل مرحلة.">
+  <meta name="theme-color" content="#FFC93C">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="برامجنا | مركز القلم الأصفر لضيافة الأطفال">
+  <meta property="og:description" content="ما يقدّمه مركز القلم الأصفر: حفظ القرآن والسيرة النبوية، ثنائية اللغة، أنشطة صفية ولا صفية، صالة لعب داخلية وخارجية، وفصول مجهزة لكل مرحلة.">
+  <meta property="og:image" content="assets/img/og.jpg">
+
+  <!-- Set language before first paint to avoid a flash of the wrong direction -->
+  <script>
+    (function () {
+      var lang = 'ar';
+      try {
+        var q = new URLSearchParams(location.search).get('lang');
+        lang = q || localStorage.getItem('yp-lang') || 'ar';
+      } catch (e) {}
+      if (lang === 'en') {
+        document.documentElement.lang = 'en';
+        document.documentElement.dir = 'ltr';
+      }
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@700&family=Baloo+Bhaijaan+2:wght@500;600;700;800&family=Caveat:wght@600;700&family=Nunito:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">تخطَّ إلى المحتوى</a>
+
+  <!-- Scroll progress: a pencil that writes as you scroll -->
+  <div class="progress" aria-hidden="true"><div class="progress__bar"><span class="progress__tip"></span></div></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Yellow Pen Center">
+        <img class="brand__mark" src="assets/img/emblem.webp" width="60" height="57" alt="">
+        <span class="brand__name">
+          <span class="brand__ar">مركز القلم الأصفر</span>
+          <span class="brand__en">Yellow Pen Center</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a href="index.html" data-i18n="nav.home">الرئيسية</a></li>
+          <li><a href="about.html" data-i18n="nav.about">من نحن</a></li>
+          <li><a href="programs.html" aria-current="page" data-i18n="nav.programs">برامجنا</a></li>
+          <li><a href="gallery.html" data-i18n="nav.gallery">المعرض</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">تواصل معنا</a></li>
+        </ul>
+        <a class="btn btn--primary nav__cta-mobile" href="contact.html#visit" data-i18n="cta.book">احجز زيارة</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="lang-switch" type="button" id="langSwitch" aria-label="Switch to English">
+          <span class="lang-switch__opt" data-l="ar">ع</span>
+          <span class="lang-switch__opt" data-l="en">EN</span>
+        </button>
+        <a class="btn btn--primary btn--sm header__cta" href="contact.html#visit" data-i18n="cta.book">احجز زيارة</a>
+        <button class="menu-toggle" type="button" id="menuToggle" aria-expanded="false" aria-controls="nav" data-i18n-attr="aria-label:menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="hero__paper" aria-hidden="true"></div>
+      <div class="container page-hero__grid">
+        <div class="page-hero__copy">
+          <p class="crumbs reveal"><a href="index.html" data-i18n="nav.home">الرئيسية</a><span aria-hidden="true">/</span><span data-i18n="nav.programs">برامجنا</span></p>
+          <h1 class="page-hero__title reveal" data-delay="1"><span data-i18n="pr.h1a">يومٌ مليء</span> <mark class="marker" data-i18n="pr.h1b">باللعب والتعلّم</mark></h1>
+          <p class="lead reveal" data-delay="2" data-i18n="pr.lead">ستة أشياء نقدّمها لكل طفل في القلم الأصفر، من عمر سنتين إلى ٦ سنوات.</p>
+        </div>
+        <div class="page-hero__art reveal reveal--pop" data-delay="2">
+          <span class="spark spark--1" aria-hidden="true"></span>
+          <span class="spark spark--3" aria-hidden="true"></span>
+          <figure class="polaroid">
+            <img src="assets/img/parachute-2-600.webp" width="600" height="338" alt="الأطفال يلعبون بالمظلة الملوّنة" data-i18n-attr="alt:img.parachute">
+            <figcaption class="hand" data-i18n="mo.c3">مغامرة المظلة الملوّنة</figcaption>
+          </figure>
+          <figure class="polaroid">
+            <img src="assets/img/hall-400.webp" width="400" height="711" alt="أطفال يجمعون الألعاب الملوّنة في الصالة" data-i18n-attr="alt:img.hall">
+            <figcaption class="hand" data-i18n="mo.c5">مسابقة جمع الألوان</figcaption>
+          </figure>
+        </div>
+      </div>
+      <svg class="book-edge" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path class="book-edge__page" d="M0 40 C 360 0, 620 10, 720 70 C 820 10, 1080 0, 1440 40 V120 H0Z"/>
+        <path class="book-edge__line" d="M0 58 C 360 18, 620 28, 720 88 C 820 28, 1080 18, 1440 58"/>
+        <path class="book-edge__spine" d="M0 104 C 400 96, 640 100, 720 116 C 800 100, 1040 96, 1440 104 V120 H0Z"/>
+      </svg>
+    </section>
+
+    <section class="section features">
+      <div class="container">
+        <article class="feature">
+          <figure class="feature__media feature__media--art reveal reveal--pop"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 18c-6-4-14-4-21-1v32c7-3 15-3 21 1 6-4 14-4 21-1V17c-7-3-15-3-21 1Z"/><path d="M32 18v32"/><path d="M44 8a7 7 0 1 0 4 12.7A8.5 8.5 0 1 1 44 8Z"/></svg></figure>
+          <div class="reveal" data-delay="1">
+            <span class="feature__n" data-i18n="pr.n1">٠١</span>
+            <h2 data-i18n="pr.f1.t">حفظ القرآن والسيرة النبوية</h2>
+            <p data-i18n="pr.f1.p">نبدأ مع أطفالنا من الصغر في حفظ القرآن الكريم، ونحكي لهم من سيرة النبي ﷺ بأسلوب مبسّط يقرّب القيم إلى قلوبهم.</p>
+            <ul class="chips">
+            <li data-i18n="pr.f1.c1">حفظ القرآن الكريم</li>
+            <li data-i18n="pr.f1.c2">السيرة النبوية</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="feature feature--flip">
+          <figure class="feature__media feature__media--art feature__media--sky reveal reveal--pop"><div class="bubbles" aria-hidden="true"><span class="bubble bubble--ar">أ ب ت</span><span class="bubble bubble--en">A B C</span></div></figure>
+          <div class="reveal" data-delay="1">
+            <span class="feature__n" data-i18n="pr.n2">٠٢</span>
+            <h2 data-i18n="pr.f2.t">ثنائية اللغة: عربي وإنجليزي</h2>
+            <p data-i18n="pr.f2.p">يسمع الطفل اللغتين ويستخدمهما خلال يومه، فيكتسب الإنجليزية بشكل طبيعي ويبقى معتزًّا بلغته العربية.</p>
+            <ul class="chips">
+            <li data-i18n="pr.f2.c1">العربية</li>
+            <li data-i18n="pr.f2.c2">English</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="feature">
+          <figure class="feature__media feature__media--coral reveal reveal--pop"><img src="assets/img/parachute.webp" width="1024" height="576" loading="lazy" alt="أطفال يطلّون من فتحات المظلة" data-i18n-attr="alt:img.parachute2"></figure>
+          <div class="reveal" data-delay="1">
+            <span class="feature__n" data-i18n="pr.n3">٠٣</span>
+            <h2 data-i18n="pr.f3.t">أنشطة صفية ولا صفية</h2>
+            <p data-i18n="pr.f3.p">أنشطة داخل الفصل وخارجه تعلّم الطفل المهارات الحياتية واليومية، وتهيّئه ليكون جاهزًا لدخول المدرسة.</p>
+            <ul class="chips">
+            <li data-i18n="pr.f3.c1">أنشطة صفية</li>
+            <li data-i18n="pr.f3.c2">أنشطة لا صفية</li>
+            <li data-i18n="pr.f3.c3">مهارات حياتية</li>
+            <li data-i18n="pr.f3.c4">جاهزية للمدرسة</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="feature feature--flip">
+          <figure class="feature__media reveal reveal--pop"><video class="js-loop" muted loop playsinline preload="none" poster="assets/img/outdoor.webp" width="480" height="684" aria-label="الساحة الخارجية" data-i18n-attr="aria-label:tour.v1"><source src="assets/video/loop-outdoor.mp4" type="video/mp4"></video></figure>
+          <div class="reveal" data-delay="1">
+            <span class="feature__n" data-i18n="pr.n4">٠٤</span>
+            <h2 data-i18n="pr.f4.t">صالة لعب داخلية وخارجية</h2>
+            <p data-i18n="pr.f4.p">مساحتان للحركة واللعب: صالة داخلية، وساحة خارجية مغطاة بعشب أخضر وجدران ملوّنة.</p>
+            <ul class="chips">
+            <li data-i18n="pr.f4.c1">صالة داخلية</li>
+            <li data-i18n="pr.f4.c2">ساحة خارجية</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="feature">
+          <figure class="feature__media feature__media--art feature__media--lilac reveal reveal--pop"><svg viewBox="0 0 64 64" aria-hidden="true"><rect x="10" y="12" width="44" height="28" rx="3"/><path d="M18 22h14M18 29h22"/><path d="M24 40l-4 12M40 40l4 12"/><path d="m46 18 4 4-10 10h-4v-4l10-10Z"/></svg></figure>
+          <div class="reveal" data-delay="1">
+            <span class="feature__n" data-i18n="pr.n5">٠٥</span>
+            <h2 data-i18n="pr.f5.t">فصول مجهزة لكل مرحلة</h2>
+            <p data-i18n="pr.f5.p">لكل مرحلة عمرية فصلها المهيأ بما يناسب احتياجات أطفالها، من عمر سنتين حتى ٦ سنوات.</p>
+            <ul class="chips">
+            <li data-i18n="pr.f5.c1">فصل لكل مرحلة</li>
+            <li data-i18n="pr.f5.c2">من سنتين إلى ٦ سنوات</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="feature feature--flip">
+          <figure class="feature__media feature__media--art feature__media--coral reveal reveal--pop"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="22" cy="20" r="6"/><circle cx="42" cy="24" r="5"/><path d="M12 50c0-9 4-16 10-16s10 7 10 16"/><path d="M34 50c0-7 3-12 8-12s8 5 8 12"/><path d="M30 12c1-3 5-3 6 0 1-3 5-3 6 0 1 3-6 7-6 7s-7-4-6-7Z"/></svg></figure>
+          <div class="reveal" data-delay="1">
+            <span class="feature__n" data-i18n="pr.n6">٠٦</span>
+            <h2 data-i18n="pr.f6.t">دعم الفروقات الفردية</h2>
+            <p data-i18n="pr.f6.p">لا يتعلّم الأطفال بالطريقة نفسها ولا بالسرعة نفسها؛ لذلك نتابع كل طفل ونقدّم له الدعم الذي يناسبه.</p>
+            <ul class="chips">
+            <li data-i18n="pr.f6.c1">متابعة لكل طفل</li>
+            <li data-i18n="pr.f6.c2">دعم يناسب كل طفل</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ AGES: growing pencils ============ -->
+    <section class="section ages" id="ages">
+      <div class="container ages__grid">
+        <div class="ages__copy">
+          <p class="kicker kicker--light reveal" data-i18n="ages.kicker">الأعمار</p>
+          <h2 class="h2 reveal" data-delay="1">
+            <span data-i18n="ages.t1">من سنتين إلى ٦ سنوات</span>
+            <span class="ages__sub" data-i18n="ages.t2">ينمو القلم… وينمو معه طفلك</span>
+          </h2>
+          <p class="lead reveal" data-delay="2" data-i18n="ages.p">نستقبل الأطفال من عمر سنتين حتى ٦ سنوات، ولكل مرحلة فصلها المجهز وأنشطتها المناسبة؛ من أولى خطوات الاكتشاف إلى الاستعداد الكامل ليوم المدرسة الأول.</p>
+          <a class="btn btn--sun reveal" data-delay="3" href="contact.html#visit" data-i18n="cta.askSeat">اسأل عن مقعد لطفلك</a>
+        </div>
+
+        <div class="pencils" role="img" data-i18n-attr="aria-label:ages.aria" aria-label="أقلام تكبر من عمر سنتين إلى ٦ سنوات">
+          <div class="pencil" style="--h:.42;--c:var(--sun)"><span class="pencil__age"><b data-i18n="ages.n2">٢</b></span></div>
+          <div class="pencil" style="--h:.56;--c:var(--tangerine)"><span class="pencil__age"><b data-i18n="ages.n3">٣</b></span></div>
+          <div class="pencil" style="--h:.70;--c:var(--coral)"><span class="pencil__age"><b data-i18n="ages.n4">٤</b></span></div>
+          <div class="pencil" style="--h:.84;--c:var(--sky)"><span class="pencil__age"><b data-i18n="ages.n5">٥</b></span></div>
+          <div class="pencil" style="--h:1;--c:var(--lilac)"><span class="pencil__age"><b data-i18n="ages.n6">٦</b></span></div>
+          <p class="pencils__label hand" data-i18n="ages.years">سنوات العمر</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section road">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker reveal" data-i18n="rd.k">الهدف</p>
+          <h2 class="h2 reveal" data-delay="1"><span data-i18n="rd.ta">الطريق إلى</span> <mark class="marker" data-i18n="rd.tb">المدرسة</mark></h2>
+          <p class="lead reveal" data-delay="2" data-i18n="rd.p">كل ما نقدّمه يصبّ في هدف واحد: طفل جاهز لدخول المدرسة.</p>
+        </header>
+        <ol class="path">
+          <li class="reveal" data-delay="0"><span class="path__dot" data-i18n="rd.n1">١</span><b data-i18n="rd.s1t">ألعب وأكتشف</b><span data-i18n="rd.s1p">في صالة اللعب الداخلية والخارجية</span></li>
+          <li class="reveal" data-delay="1"><span class="path__dot" data-i18n="rd.n2">٢</span><b data-i18n="rd.s2t">أتكلّم بلغتين</b><span data-i18n="rd.s2p">عربي وإنجليزي</span></li>
+          <li class="reveal" data-delay="2"><span class="path__dot" data-i18n="rd.n3">٣</span><b data-i18n="rd.s3t">أحفظ وأتعلّم القيم</b><span data-i18n="rd.s3p">القرآن الكريم والسيرة النبوية</span></li>
+          <li class="reveal" data-delay="3"><span class="path__dot" data-i18n="rd.n4">٤</span><b data-i18n="rd.s4t">أعتمد على نفسي</b><span data-i18n="rd.s4p">مهارات حياتية ويومية</span></li>
+          <li class="reveal" data-delay="4"><span class="path__dot" data-i18n="rd.n5">٥</span><b data-i18n="rd.s5t">جاهز للمدرسة</b><span data-i18n="rd.s5p">واثق ومستعد ليومه الأول</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container">
+        <h2 class="h2 reveal"><span data-i18n="band.t1">زورونا وشاهدوا المكان</span> <mark class="marker" data-i18n="band.t2">بأنفسكم</mark></h2>
+        <p class="reveal" data-delay="1" data-i18n="band.p">أفضل طريقة لاختيار المكان المناسب لطفلك هي أن تراه بنفسك. راسلونا وسنرتب معكم موعد الزيارة.</p>
+        <div class="cta-band__btns reveal" data-delay="2">
+          <a class="btn btn--ink btn--lg js-wa" href="https://wa.me/966505393575" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 3.3 17.1L2 22l5-1.3A11 11 0 0 0 20.5 3.5Zm-8.5 17a9 9 0 0 1-4.6-1.3l-.3-.2-3 .8.8-2.9-.2-.3A9 9 0 1 1 12 20.5Zm5-6.7c-.3-.1-1.6-.8-1.9-.9s-.4-.1-.6.1-.7.9-.9 1.1-.3.2-.6.1a7.4 7.4 0 0 1-3.7-3.2c-.3-.5.3-.5.8-1.6a.5.5 0 0 0 0-.5l-.9-2.1c-.2-.6-.5-.5-.6-.5h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3Z"/></svg><span data-i18n="cta.bookWa">احجز زيارة عبر واتساب</span></a>
+          <a class="btn btn--lg" href="contact.html"><span data-i18n="nav.contact">تواصل معنا</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/img/logo-full-480.webp" width="160" height="206" loading="lazy" alt="شعار مركز القلم الأصفر — Yellow Pen Center" data-i18n-attr="alt:img.logo">
+        <p data-i18n="ft.tag">مركز القلم الأصفر لضيافة الأطفال — جدة، الحمدانية.</p>
+      </div>
+      <nav class="footer__links" aria-label="Footer">
+        <h4 data-i18n="ft.explore">تصفّح</h4>
+        <a href="index.html" data-i18n="nav.home">الرئيسية</a>
+        <a href="about.html" data-i18n="nav.about">من نحن</a>
+        <a href="programs.html" data-i18n="nav.programs">برامجنا</a>
+        <a href="gallery.html" data-i18n="nav.gallery">المعرض</a>
+        <a href="contact.html" data-i18n="nav.contact">تواصل معنا</a>
+      </nav>
+      <div class="footer__contact">
+        <h4 data-i18n="ft.follow">تابعونا</h4>
+        <div class="socials">
+          <a href="https://www.instagram.com/yellowpen2023/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" class="fill"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@yellowpen2023" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.5 3 2.5 5 5.5 5"/></svg>
+          </a>
+          <a class="js-wa" href="https://wa.me/966505393575" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4.2A8.5 8.5 0 1 1 8.4 19L4 20Z"/></svg>
+          </a>
+        </div>
+        <a class="footer__phone num" dir="ltr" href="tel:+966505393575">050 539 3575</a>
+        <span class="footer__handle" dir="ltr">@yellowpen2023</span>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> <span data-i18n="ft.rights">مركز القلم الأصفر. جميع الحقوق محفوظة.</span></p>
+      <a href="#top" class="footer__top" data-i18n="ft.top">العودة للأعلى ↑</a>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky action bar -->
+  <div class="action-bar" aria-label="Quick contact">
+    <a href="tel:+966505393575" class="action-bar__btn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></svg>
+      <span data-i18n="bar.call">اتصال</span>
+    </a>
+    <a href="https://wa.me/966505393575" target="_blank" rel="noopener" class="action-bar__btn action-bar__btn--wa js-wa">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4.2A8.5 8.5 0 1 1 8.4 19L4 20Z"/></svg>
+      <span data-i18n="bar.wa">احجز زيارة</span>
+    </a>
+  </div>
+
+  <!-- Video lightbox -->
+  <dialog class="lightbox" id="lightbox" data-i18n-attr="aria-label:lb.aria" aria-label="مشغّل الفيديو">
+    <button class="lightbox__close" type="button" data-i18n-attr="aria-label:lb.close" aria-label="إغلاق">×</button>
+    <video class="lightbox__video" controls playsinline preload="none"></video>
+    <img class="lightbox__img" alt="" hidden>
+  </dialog>
+
+  <script src="assets/js/i18n.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/popup.js" defer></script>
+</body>
+</html>
